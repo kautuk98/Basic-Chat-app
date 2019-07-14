@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html style="scroll-behavior: smooth">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale,user-scalable=no">
@@ -21,22 +21,22 @@
 
                 <div class="chat__footer">
                 <form id="message-form">
-                    <input name="message" type ="text" placeholder="Message" autofocus autocomplete="off"/>
-                    <button>Send</button>
+                    <input name="message" type ="text" placeholder="Type your message here..." autofocus autocomplete="off" style="border-radius: 20px"/>
+                    <button style="border-radius: 30px">Send message</button>
                 </form>
         
-                <button id="send-location">Send Location </button>
+                <button id="send-location" style="border-radius: 30px">Send Location </button>
         </div>
         </div>
 
         <script id="message-template" type="text/template">
             <li class="message">
                 <div class="message__title">
-                    <h4>{{from}}</h4>
-                    <span>{{createdAt}}</span>
+                    <h4 style ="font-size: 20px">{{from}}</h4>
+                    <span style ="font-size: 15px">{{createdAt}}</span>
                 </div>
                     <div class="message__body">
-                        <p>{{text}}</p>
+                        <p style="font-family: Montserrat; font-size: 14px">{{text}}</p>
                     </div>
             </li>
         </script>
@@ -45,11 +45,11 @@
         <script id="location-message-template" type="text/template">
             <li class="message">
                 <div class="message__title">
-                    <h4>{{from}}</h4>
-                    <span>{{createdAt}}</span>
+                    <h4 style ="font-size: 20px">{{from}}</h4>
+                    <span style ="font-size: 15px">{{createdAt}}</span>
                 </div>
                     <div class="message__body">
-                        <p>
+                        <p style="font-family: Montserrat; font-size: 14px">
                             <a href="{{url}}" target="_blank">My current location</a>
                         </p>
                     </div>

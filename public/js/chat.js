@@ -34,10 +34,10 @@ socket.on('disconnect', function () {
 });
 
 socket.on('updateUserList', function (users) {
-  var ol = jQuery('<ol></ol>');
+  var ol = jQuery('<ol></ol><br><br>');
 
   users.forEach(function (user) {
-    ol.append(jQuery('<li></li>').text(user));
+    ol.append(jQuery('<li style="font-family:Montserrat; font-size: 17px"></li>').text(user));
   });
 
   jQuery('#users').html(ol);
